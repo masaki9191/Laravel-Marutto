@@ -1,0 +1,71 @@
+.l-main {
+    .container {
+        display: flex;
+        width: 100%;
+    }
+    .sidebar {
+        width: 250px;
+        background-color: white;
+        border-right: 2px solid #01B3BC;
+        height: calc(100vh - 8.495rem);
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        padding: 20px 0 0 0;
+        .list {
+            a {
+                font-size: 18px;
+                color: #656565;
+                display: flex;
+                align-items: center;
+                padding: 20px 0 20px 30px;
+                border-left: 10px solid white;
+                cursor: pointer;
+                span {
+                    display: inline-block;
+                    &:first-child {
+                        width: 55px;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+                &.active {
+                    border-left: 10px solid #030302;
+                }
+            }
+        }
+        .c-topGo {
+            bottom: 100px;
+            left: 40px;
+            a {
+                font-size: 24px;
+            }
+        }
+    }
+    .content {
+        width: calc(100% - 250px);
+        padding: 4rem 8rem;
+        margin-left: 250px;
+        &-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+    }
+    .title {
+        font-size: 33px;
+        line-height: (47 / 33);
+    }
+    @media screen and (max-width: 1550px) {
+        .content {
+            padding: 20px 30px;
+        }
+    }
+    @include mq(sp) {
+        .content {
+            width: 100%;
+            padding: 40px 20px;
+            margin-left: 0
+        }
+    }
+}

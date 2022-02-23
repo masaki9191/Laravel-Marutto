@@ -1,0 +1,151 @@
+.c-productWrapper {
+    display: flex;
+    .column {
+        width: 50%;
+    }
+    .imgarea {
+        position: sticky;
+        top: 0;        
+    }
+    .slider-for {
+        img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .slider-nav {
+        .item {
+            width: 25%;
+            cursor: pointer;
+        }
+        img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .infos {
+        padding-left: 70px;
+        .icons {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            img {
+                margin-right: 5px;
+            }
+            span {
+                margin-right: 30px;
+            }
+        }
+    }
+    .u-btn-black {
+        border-radius: 10px;
+        font-size: 24px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+        img {
+            margin-right: 30px;
+        }
+    }
+    .title {
+        font-family: $font_plus;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+    .sub-title {
+        font-family: $font_plus;
+        font-weight: bold;
+        font-size: 27px;
+        line-height: 2;
+        border-bottom: 1px solid #030302;
+        span {
+            font-size: 20px;
+        }
+    }
+    .price {
+        span {
+            &:first-child {
+                font-size: 20px;
+            }
+        }
+    }
+    .panel {
+        margin-top: 50px;
+        &__content {
+            padding: 24px 5px 0;
+        }
+        &.desc {
+            p {
+                line-height: 2;
+            }
+        }
+        &.comment {
+            .c-avatar {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .info {
+        .row {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .lead {
+            width: 200px;
+        }
+        .txt {
+            width: calc(100% - 200px);
+        }
+    }
+    @include mq(sp) {
+        display: block;
+        .column {
+            width: 100%;
+        }
+        .infos {
+            padding: 0;
+            margin-top: 30px;
+            .icons {
+                margin-top: 15px;
+            }
+        }
+        .u-btn-black {
+            width: 300px;
+        }
+        .title {
+            font-size: 20px;
+        }
+        .panel {
+            margin-top: 30px;
+        }
+        .sub-title {
+            font-size: 17px;
+        }
+        .u-btn-black {
+            border-radius: 10px;
+            font-size: 20px;
+            margin-top: 30px;
+            img {
+                margin-right: 20px;
+                width: 20px;
+            }
+        }
+        .price {
+            span {
+                &:first-child {
+                    font-size: 15px;
+                }
+                &:last-child {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

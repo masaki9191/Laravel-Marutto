@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+  <g id="Group_2947" data-name="Group 2947" transform="translate(-100 -1008)">
+    <g id="Ellipse_10" data-name="Ellipse 10" transform="translate(100 1008)" fill="none" stroke="#030302" stroke-width="1">
+      <circle cx="11.5" cy="11.5" r="11.5" stroke="none"/>
+      <circle cx="11.5" cy="11.5" r="11" fill="none"/>
+    </g>
+    <g id="Icons-_-Back" data-name="Icons-/-Back" transform="translate(101 1011)">
+      <rect id="bg" width="18" height="18" fill="#030302" opacity="0"/>
+      <path id="back" d="M7.318,7.318V.844A.841.841,0,1,1,9,.844V8.129A.888.888,0,0,1,8.129,9H.844a.841.841,0,1,1,0-1.682Z" transform="translate(18.364 9) rotate(135)" fill="#030302"/>
+    </g>
+  </g>
+</svg>

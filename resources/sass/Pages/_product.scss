@@ -1,0 +1,101 @@
+.p-product {
+    &Index {
+        .inner {
+            margin: 30px auto 0;
+        }
+        .form-panel {
+            select {
+                padding: 0.5em;
+                border-radius: 5px;
+                &:not(:last-child) {
+                    margin-right: 30px;
+                }
+            }
+        }
+        @media screen and (max-width: 1200px) {
+            .inner {
+                padding: 0 50px;
+            }
+        }
+        @include mq(sp) {
+            .inner {
+                padding: 0 20px;
+            }
+            .form-panel {
+                select {
+                    margin-bottom: 10px;
+                    &:not(:last-child) {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+    &Detail {
+        .container {
+            max-width: 1440px;
+            margin: 127px auto 0;
+        }
+        .related {
+            max-width: 1200px;
+            margin: 120px auto 0;
+        }
+        @media screen and (max-width: 1440px) {
+            .container {
+                padding: 0 20px;
+            }
+            .infos {
+                padding-left: 7rem;
+            }
+        }
+        @include mq(sp) {
+            .container {
+                margin-top: 50px;
+            }
+        }
+    }
+    &Cart {
+        .inner {
+            margin-top: 50px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        tr {
+            border-bottom: 1px solid black;
+        }
+        td {
+            padding: 15px;
+        }
+        td[data-th='Product'] div{
+            display: flex;
+        }
+        .product-name {
+            font-size: 2rem;
+            width: 500px;
+            margin-left: 20px;
+        }
+        .quantity {
+            width: 100px !important;
+        }
+        .remove-cart {
+            background-color: red;
+            border: unset;
+            padding: 8px 10px;
+        }
+        .btn {
+            margin-top: 30px;
+            .u-btn {
+                width: 20rem;
+                &:first-child {
+                    margin-right: 20px;
+                }
+            }
+        }
+        tfoot {
+            text-align: right;
+            font-size: 2rem;
+        }
+    }
+}

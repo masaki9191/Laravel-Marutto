@@ -1,0 +1,580 @@
+.u-inner-1440 {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    @media screen and (max-width: 1440px) {
+        padding: 0 10rem;
+    }
+}
+
+.u-inner-1200 {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    @media screen and (max-width: 1200px) {
+        //padding: 0 10rem;
+    }
+}
+
+.u-inner-800 {
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    @media screen and (max-width: 800px) {
+        //padding: 0 10rem;
+    }
+}
+
+.u-pagenav {
+    display: flex;
+    justify-content: center;
+}
+
+.u-btn {
+    display: inline-flex;
+    border: 1px solid #030302;
+    align-items: center;
+    justify-content: center;
+    color: $color_base;
+    font-size: 2.5rem;
+    line-height: 1;
+    width: 25rem;
+    text-align: center;
+    padding: 0.7em 0;
+    border-radius: 2em;
+    cursor: pointer;
+    &.sm {
+        font-size: 1.5rem;
+        width: 15rem;
+    }
+}
+
+.u-btn-gray {
+    background-color: #9b9b9b;
+    color: #3b3b3b;
+    border: unset;
+}
+
+.u-btn-black {
+    background-color: #030302;
+    color: white;
+    border: unset;
+}
+
+.u-btn-red {
+    background-color: red;
+    color: white;
+    border: unset;
+}
+
+.u-checkbox {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &:hover {
+        // color: #abd3f7;
+        .checkmark {
+            background-color: #abd3f7;
+        }
+    }
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+        &:checked {
+            &~.checkmark {
+                background-color: #2196f3;
+                &:after {
+                    display: block;
+                }
+            }
+        }
+    }
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: white;
+        border: 1px solid #2196f3;
+        &:after {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            left: 6px;
+            top: 5px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+}
+
+
+/* The container */
+
+.u-radio {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        &:checked~.checkmark {
+            background-color: #2196f3;
+        }
+        &:checked~.checkmark:after {
+            display: block;
+        }
+    }
+    &:hover input~.checkmark {
+        background-color: #ccc;
+    }
+    .checkmark {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: #eee;
+        border-radius: 50%;
+        &:after {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            top: 5px;
+            left: 5px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: white;
+        }
+    }
+}
+
+.u-modal {
+    padding: 20px;
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__btns {
+        text-align: center;
+        .u-btn {
+            &:first-child {
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+.u-modal-card {
+    .u-modal__title {
+        font-size: 22px;
+    }
+    .u-modal__price {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+    .u-modal__body {
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+        dl {
+            display: flex;
+        }
+        dt {
+            width: 220px;
+        }
+    }
+}
+
+.u-center {
+    text-align: center;
+}
+
+.u-right {
+    text-align: right;
+}
+
+.u-left {
+    text-align: left;
+}
+
+.u-row {
+    display: flex;
+    @include mq(sp) {
+        display: block;
+    }
+}
+
+.u-column {
+    @include mq(sp) {
+        width: 100% !important;
+    }
+}
+
+.u-underline {
+    text-decoration: underline;
+}
+
+.u-block {
+    display: block;
+}
+
+.u-inline-block {
+    display: inline-block;
+}
+
+.hidden {
+    display: none;
+}
+
+.u-flex {
+    display: flex;
+    @include mq(sp) {
+        flex-direction: column;
+    }
+    &.wrap {
+        flex-wrap: wrap;
+    }
+    &.center {
+        justify-content: center;
+    }
+    &.between {
+        justify-content: space-between;
+    }
+    &.a-center {
+        align-items: center;
+    }
+    &.column {
+        flex-direction: column;
+    }
+}
+
+.u-sp-flex {
+    @include mq(sp) {
+        display: flex;
+        flex-direction: row;
+        &.wrap {
+            flex-wrap: wrap;
+        }
+        &.center {
+            justify-content: center;
+        }
+        &.between {
+            justify-content: space-between;
+        }
+        &.a-center {
+            align-items: center;
+        }
+        &.column {
+            flex-direction: column;
+        }
+    }
+}
+
+.invalid {
+    background-color: #ffdddd;
+}
+
+.is-invalid {
+    border-color: red !important;
+}
+
+.u-note {
+    color: red;
+    font-size: 14px;
+}
+
+.u-alert {
+    margin-bottom: 20px;
+    &.danger {
+        color: #721c24;
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+    }
+    &.success {
+        color: #004085;
+        background-color: #cce5ff;
+        border-color: #b8daff;
+    }
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+.pagination {
+    display: flex;
+    .disabled {
+        display: none !important;
+    }
+    .page-item {
+        display: block;
+        border: 1px solid #ddd;
+        &.active {
+            background-color: #e9ecef;
+        }
+    }
+    .page-link {
+        display: block;
+        padding: 0.5em 0.7em;
+    }
+    a {
+        &:hover {
+            color: #007bff;
+        }
+    }
+}
+
+
+/************************************  Color Part Start  **********************************/
+
+.u-red {
+    color: #ff3434;
+}
+
+.u-bg-white {
+    background-color: white;
+}
+
+
+/************************************  Color Part End  **********************************/
+
+
+/************************************  Margin Padding Part Start  **********************************/
+
+// margin-top:0px ~ margin-top:100px
+@for $i from 0 through 100 {
+    .u-mt#{$i * 5} {
+        margin-top: #{$i * 5}px;
+        @include mq(max1540) {
+            margin-top: #{$i * 4}px;
+        }
+        @include mq(tb) {
+            margin-top: #{$i * 3.5}px;
+        }
+        @include mq(sp) {
+            margin-top: #{$i * vw(2)};
+        }
+    }
+    .u-mt-#{$i * 5} {
+        @include mq(pc) {
+            margin-top: #{$i * -5}px;
+        }
+    }
+    @include mq(sp) {
+        .u-sp-mt#{$i * 5} {
+            margin-top: #{$i * vw(5)};
+        }
+    }
+}
+
+// margin-bottom:0px ~ margin-bottom:100px
+@for $i from 0 through 100 {
+    .u-mb#{$i * 5} {
+        margin-bottom: #{$i * 5}px;
+        @include mq(max1540) {
+            margin-bottom: #{$i * 4}px;
+        }
+        @include mq(tb) {
+            margin-bottom: #{$i * 3.5}px;
+        }
+        @include mq(sp) {
+            margin-bottom: #{$i * vw(2)};
+        }
+    }
+    @include mq(sp) {
+        .u-sp-mb#{$i * 5} {
+            margin-bottom: #{$i * vw(5)} !important;
+        }
+    }
+}
+
+// margin-left:0px ~ margin-left:100px
+@for $i from 0 through 100 {
+    .u-ml#{$i * 5} {
+        margin-left: #{$i * 5}px;
+        @include mq(max1540) {
+            margin-left: #{$i * 4}px;
+        }
+        @include mq(tb) {
+            margin-left: #{$i * 3.5}px;
+        }
+        @include mq(sp) {
+            margin-left: #{$i * vw(2)};
+        }
+    }
+    @include mq(sp) {
+        .u-sp-ml#{$i * 5} {
+            margin-left: #{$i * vw(5)};
+        }
+    }
+}
+
+// margin-right:0px ~ margin-right:100px
+@for $i from 0 through 100 {
+    .u-mr#{$i * 5} {
+        margin-right: #{$i * 5}px;
+        @include mq(max1540) {
+            margin-right: #{$i * 4}px;
+        }
+        @include mq(tb) {
+            margin-right: #{$i * 3.5}px;
+        }
+        @include mq(sp) {
+            margin-right: #{$i * vw(2)};
+        }
+    }
+    @include mq(sp) {
+        .u-sp-mr#{$i * 5} {
+            margin-right: #{$i * vw(5)};
+        }
+    }
+}
+
+// padding
+// padding-top:0px ~ padding-top:100px
+@for $i from 0 through 100 {
+    .u-pt#{$i * 5} {
+        padding-top: #{$i * 5}px;
+        @include mq(max1540) {
+            padding-top: #{$i * 4}px;
+        }
+        @include mq(tb) {
+            padding-top: #{$i * 3.5}px;
+        }
+        @include mq(sp) {
+            padding-top: #{$i * vw(2)};
+        }
+    }
+    @include mq(sp) {
+        .u-sp-pt#{$i * 5} {
+            padding-top: #{$i * vw(5)};
+        }
+    }
+}
+
+// padding-bottom:0px ~ padding-bottom:100px
+@for $i from 0 through 100 {
+    .u-pb#{$i * 5} {
+        padding-bottom: #{$i * 5}px;
+        @include mq(max1540) {
+            padding-bottom: #{$i * 4}px;
+        }
+        @include mq(tb) {
+            padding-bottom: #{$i * 3.5}px;
+        }
+        @include mq(sp) {
+            padding-bottom: #{$i * vw(2)};
+        }
+    }
+    @include mq(sp) {
+        .u-sp-pb#{$i * 5} {
+            padding-bottom: #{$i * vw(5)};
+        }
+    }
+}
+
+// padding-left:0px ~ padding-left:100px
+@for $i from 0 through 100 {
+    .u-pl#{$i * 5} {
+        padding-left: #{$i * 5}px;
+        @include mq(max1540) {
+            padding-left: #{$i * 4}px;
+        }
+        @include mq(tb) {
+            padding-left: #{$i * 3.5}px;
+        }
+        @include mq(sp) {
+            padding-left: #{$i * vw(2)};
+        }
+    }
+    @include mq(sp) {
+        .u-sp-pl#{$i * 5} {
+            padding-left: #{$i * vw(5)};
+        }
+    }
+}
+
+// padding-right:0px ~ padding-right:100px
+@for $i from 0 through 100 {
+    .u-pr#{$i * 5} {
+        padding-right: #{$i * 5}px;
+        @include mq(max1540) {
+            padding-right: #{$i * 4}px;
+        }
+        @include mq(tb) {
+            padding-right: #{$i * 3.5}px;
+        }
+        @include mq(sp) {
+            padding-right: #{$i * vw(2)};
+        }
+    }
+    @include mq(sp) {
+        .u-sp-pr#{$i * 5} {
+            padding-right: #{$i * vw(5)} !important;
+        }
+    }
+}
+
+
+/************************************  Margin Padding Part End  **********************************/
+
+
+/************************************  Font Part Start  **********************************/
+
+
+/************************************  Font Part End  **********************************/
+
+@include mq(max1020) {
+    body {
+        width: 1020px;
+        overflow-x: scroll;
+    }
+}
+
+@include mq(sp) {
+    body {
+        width: auto;
+        overflow-x: hidden;
+    }
+    .sp-hidden {
+        display: none !important;
+    }
+    .u-btn-black {
+        font-size: 16px;
+        width: 120px;
+    }
+    .u-btn-gray {
+        font-size: 16px;
+        width: 120px;
+    }
+}
+
+@include mq(pc) {
+    .pc-hidden {
+        display: none !important;
+    }
+}
+
+// utility end

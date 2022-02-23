@@ -1,0 +1,52 @@
+.p-login {
+    .sidebar {
+        .title {
+            font-family: $font_plus;
+            font-weight: bold;
+            font-size: 3rem;
+            line-height: (90 / 50);
+            text-align: left;
+            color: #030302;
+            padding: 10rem 0 5rem;
+        }
+        .lead {
+            font-family: KOZGOPR6N_BOLD;
+            font-size: 2rem;
+            line-height: 2;
+            display: flex;
+            &::before {
+                @include icon_img(fn_em(2, 2), fn_em(2.3, 2), '/public/img/top/icon_check.svg');
+                margin: 1rem 1rem 0 0;
+            }
+            &.first {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+    .content {
+        .btns {
+            justify-content: flex-end;
+        }
+        .form-group {
+            input {
+                width: 400px;
+            }
+        }
+        .link {
+            color: $color_base;
+        }
+    }
+    @include mq(sp) {
+        .content {
+            .form-group {
+                margin-bottom: 20px;
+                input {
+                    width: 100%;
+                }
+            }
+            .link {
+                margin-top: 30px;
+            }
+        }
+    }
+}

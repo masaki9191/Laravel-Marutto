@@ -1,0 +1,106 @@
+.p-payment {
+    &Index {
+        .inner {
+            padding: 50px 0;
+            .row {
+                display: flex;
+                margin-top: 30px;
+            }
+            .left {
+                width: 170px;
+                margin-right: 30px;
+                .btn {
+                    position: relative;
+                    &:first-child {
+                        margin-bottom: 5px;
+                    }
+                    &::before {
+                        @include icon_img(17px, 17px, '/public/img/common/icon_uncheck.svg');
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 5px;
+                    }
+                    &.active {
+                        &::before {
+                            background-image: url(/public/img/common/icon_check.svg);
+                        }
+                    }
+                }
+            }
+            .right {
+                width: calc(100% - 200px);
+                .u-btn-black {
+                    margin-top: 30px;
+                }
+            }
+            .panel {
+                padding: 40px;
+                background-color: #F4F4F4;
+                border-radius: 10px;
+            }
+            .form-group {
+                margin-bottom: 20px;
+                p {
+                    margin-bottom: 0.5em;
+                }
+            }
+            .number {
+                width: 300px;
+            }
+            .date {
+                width: 200px;
+            }
+            .code {
+                width: 300px;
+            }
+            .hide {
+                display: none;
+            }
+        }
+        .total {
+            padding: 20px;
+            background-color: #F4F4F4;
+            border-radius: 10px;
+        }
+    }
+    &Confirm {
+        .inner {
+            padding: 50px 0;
+            .panel {
+                padding: 80px;
+                background-color: #F4F4F4;
+                border-radius: 10px;
+                margin-top: 40px;
+            }
+            .total {
+                font-size: 24px;
+            }
+            .list {
+                margin-top: 30px;
+            }
+            .row {
+                display: flex;
+                margin-bottom: 1em;
+                font-size: 18px;
+            }
+            .column {
+                width: 50%;
+            }
+            .btn {
+                margin-top: 30px;
+            }
+            @include mq(sp) {
+                .panel {
+                    padding: 30px 20px;
+                }
+                .row {
+                    display: block;
+                }
+                .column {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

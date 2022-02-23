@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="158.484" height="161.21" viewBox="0 0 158.484 161.21">
+  <g id="Group_1959" data-name="Group 1959" transform="translate(507.76 624.21)">
+    <g id="Icon_feather-shopping-cart" data-name="Icon feather-shopping-cart" transform="translate(-505.76 -612.598)">
+      <path id="Path_3596" data-name="Path 3596" d="M25.771,36.886A6.886,6.886,0,1,1,18.886,30,6.886,6.886,0,0,1,25.771,36.886Z" transform="translate(37.699 102.327)" fill="none" stroke="#f23a3a" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      <path id="Path_3597" data-name="Path 3597" d="M42.271,36.886A6.886,6.886,0,1,1,35.386,30,6.886,6.886,0,0,1,42.271,36.886Z" transform="translate(96.941 102.327)" fill="none" stroke="#f23a3a" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      <path id="Path_3598" data-name="Path 3598" d="M1.5,1.5H29.042L47.5,93.7a13.771,13.771,0,0,0,13.771,11.086H128.2A13.771,13.771,0,0,0,141.967,93.7l11.017-57.77H35.928" fill="none" stroke="#f23a3a" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+    </g>
+    <path id="Icon_awesome-plus-circle" data-name="Icon awesome-plus-circle" d="M20.556.562A19.993,19.993,0,1,0,40.549,20.556,19.99,19.99,0,0,0,20.556.562ZM32.165,22.813a.97.97,0,0,1-.967.967H23.781V31.2a.97.97,0,0,1-.967.967H18.3a.97.97,0,0,1-.967-.967V23.781H9.914a.97.97,0,0,1-.967-.967V18.3a.97.97,0,0,1,.967-.967h7.417V9.914a.97.97,0,0,1,.967-.967h4.515a.97.97,0,0,1,.967.967v7.417H31.2a.97.97,0,0,1,.967.967Z" transform="translate(-429.081 -624.772)" fill="#f23a3a"/>
+  </g>
+</svg>

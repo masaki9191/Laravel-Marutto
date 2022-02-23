@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="1106" viewBox="0 0 700 1106">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2243" data-name="Rectangle 2243" width="173" height="216" transform="translate(0 3469)" fill="#fff7ea" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_2948" data-name="Group 2948" transform="translate(0 -5528)">
+    <g id="Mask_Group_1" data-name="Mask Group 1" transform="translate(0 2949)" clip-path="url(#clip-path)">
+      <path id="Subtraction_1" data-name="Subtraction 1" d="M173.162,900H0V726.685a175.435,175.435,0,0,0,3.536,34.382,173.046,173.046,0,0,0,26.181,62.218,174.507,174.507,0,0,0,76.555,63.041,173.111,173.111,0,0,0,32.662,10.139A175.287,175.287,0,0,0,173.162,900ZM0,173.3H0V0h173.25a175.441,175.441,0,0,0-34.318,3.536A173.045,173.045,0,0,0,76.716,29.716a174.51,174.51,0,0,0-63.041,76.555A173.113,173.113,0,0,0,3.536,138.933,175.284,175.284,0,0,0,0,173.3Z" transform="translate(0 3469)" fill="#fff7ea"/>
+    </g>
+    <path id="Union_7" data-name="Union 7" d="M174,900H0V258.9H0V0H526A174,174,0,0,1,700,174V641.1h0V726A174,174,0,0,1,526,900Z" transform="translate(0 5528)" fill="#fff7ea"/>
+  </g>
+</svg>
